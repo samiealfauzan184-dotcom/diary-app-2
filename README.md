@@ -1,4 +1,4 @@
-# Diary App
+# Diary App 2
 
 Aplikasi buku harian sederhana berbasis React Native + Expo.
 
@@ -10,40 +10,58 @@ Aplikasi buku harian sederhana berbasis React Native + Expo.
 
 ## Fitur yang Diselesaikan
 
-- Total **5 entri** diary (2 entri baru ditambahkan: id 4 dan 5).
-- Semua gambar mood memakai **gambar lokal** dari `assets/moods`.
-- **Avatar pengguna** pada header menggunakan komponen `Image` (`assets/avatar/profile.jpg`).
-- **Variasi tampilan kartu berdasarkan mood** (warna border, warna latar, ketebalan border, aksen kiri, dan label mood).
-- Struktur folder rapi: data, konstanta, komponen, dan layar dipisah.
+- Total 5 entri diary, termasuk 2 entri baru dengan ID 4 dan 5.
+- Gambar mood menggunakan gambar lokal dari folder `assets/moods`.
+- Avatar pengguna pada header menggunakan komponen `Image` dari `assets/avatar/profile.jpg`.
+- Variasi tampilan kartu berdasarkan mood, meliputi warna border, warna latar, ketebalan border, aksen kiri, dan label mood.
+- Struktur folder dipisahkan menjadi data, konstanta, komponen, dan layar.
 
 ## Struktur Folder
 
-```
-diary-app/
+```text
+diary-app-2/
 ├── App.js
 ├── assets/
-│   ├── avatar/profile.jpg
-│   └── moods/ (happy, focus, calm, sad, excited .jpg)
+│   ├── avatar/
+│   │   └── profile.jpg
+│   └── moods/
+│       ├── happy.jpg
+│       ├── focus.jpg
+│       ├── calm.jpg
+│       ├── sad.jpg
+│       └── excited.jpg
 └── src/
-    ├── components/ (DiaryCard.js, Header.js)
-    ├── constants/moodStyles.js
-    ├── data/diaryEntries.js
-    └── screens/DiaryListScreen.js
+    ├── components/
+    │   ├── DiaryCard.js
+    │   └── Header.js
+    ├── constants/
+    │   └── moodStyles.js
+    ├── data/
+    │   └── diaryEntries.js
+    └── screens/
+        └── DiaryListScreen.js
 ```
 
 ## Cara Menjalankan
 
 1. Pastikan Node.js dan npm sudah terpasang.
-2. Masuk ke folder proyek:
-```
-   cd diary-app
-```
+2. Masuk ke folder proyek.
 3. Pasang dependensi:
-```
+
+   ```bash
    npm install
-```
+   ```
+
 4. Jalankan aplikasi:
-```
+
+   ```bash
    npx expo start -c
-```
-5. Scan QR code dengan **Expo Go** di HP (satu jaringan Wi-Fi dengan laptop, dan login dengan akun Expo yang sama), atau tekan `a` untuk emulator Android.
+   ```
+
+5. Scan QR code menggunakan Expo Go di HP atau tekan `a` untuk menjalankan emulator Android.
+
+## Teknologi
+
+- React Native
+- Expo
+- JavaScript
